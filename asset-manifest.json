@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "//denekd.github.io/blog-API/static/css/main.e27f1f02.chunk.css",
-    "main.js": "//denekd.github.io/blog-API/static/js/main.94a26783.chunk.js",
-    "main.js.map": "//denekd.github.io/blog-API/static/js/main.94a26783.chunk.js.map",
-    "runtime-main.js": "//denekd.github.io/blog-API/static/js/runtime-main.0a0841bb.js",
-    "runtime-main.js.map": "//denekd.github.io/blog-API/static/js/runtime-main.0a0841bb.js.map",
-    "static/js/2.fa88592c.chunk.js": "//denekd.github.io/blog-API/static/js/2.fa88592c.chunk.js",
-    "static/js/2.fa88592c.chunk.js.map": "//denekd.github.io/blog-API/static/js/2.fa88592c.chunk.js.map",
-    "index.html": "//denekd.github.io/blog-API/index.html",
-    "precache-manifest.433586cff08c26a4489f4609a48c0905.js": "//denekd.github.io/blog-API/precache-manifest.433586cff08c26a4489f4609a48c0905.js",
-    "service-worker.js": "//denekd.github.io/blog-API/service-worker.js",
-    "static/css/main.e27f1f02.chunk.css.map": "//denekd.github.io/blog-API/static/css/main.e27f1f02.chunk.css.map",
-    "static/js/2.fa88592c.chunk.js.LICENSE.txt": "//denekd.github.io/blog-API/static/js/2.fa88592c.chunk.js.LICENSE.txt"
+    "main.css": "/blog-API/static/css/main.f36f5fc2.chunk.css",
+    "main.js": "/blog-API/static/js/main.4f889d7a.chunk.js",
+    "main.js.map": "/blog-API/static/js/main.4f889d7a.chunk.js.map",
+    "runtime-main.js": "/blog-API/static/js/runtime-main.c38ff3ec.js",
+    "runtime-main.js.map": "/blog-API/static/js/runtime-main.c38ff3ec.js.map",
+    "static/js/2.fa88592c.chunk.js": "/blog-API/static/js/2.fa88592c.chunk.js",
+    "static/js/2.fa88592c.chunk.js.map": "/blog-API/static/js/2.fa88592c.chunk.js.map",
+    "index.html": "/blog-API/index.html",
+    "precache-manifest.4fcbdfdcb8142a93a0ae3e7f9b4d5b00.js": "/blog-API/precache-manifest.4fcbdfdcb8142a93a0ae3e7f9b4d5b00.js",
+    "service-worker.js": "/blog-API/service-worker.js",
+    "static/css/main.f36f5fc2.chunk.css.map": "/blog-API/static/css/main.f36f5fc2.chunk.css.map",
+    "static/js/2.fa88592c.chunk.js.LICENSE.txt": "/blog-API/static/js/2.fa88592c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0a0841bb.js",
+    "static/js/runtime-main.c38ff3ec.js",
     "static/js/2.fa88592c.chunk.js",
-    "static/css/main.e27f1f02.chunk.css",
-    "static/js/main.94a26783.chunk.js"
+    "static/css/main.f36f5fc2.chunk.css",
+    "static/js/main.4f889d7a.chunk.js"
   ]
 }
