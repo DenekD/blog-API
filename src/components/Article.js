@@ -9,15 +9,17 @@ function Article(props) {
             <p className="article__author__title">{props.title}</p>
             <p className="article__author__data">{props.data}</p>
         </div>
-        <div className="article__content__img" >
+        <div className="article__content__imgContainer" >
           <img src={props.articleImg} alt="article"/>
         </div>
         <div className="article__description" dangerouslySetInnerHTML={{ __html: props.description }} />
-        <button className="article__btn blue">
-         <a href={props.articleUrl}>go to article</a>
+        <button className="article__btn">
+         <a target='_blank' rel="noopener noreferrer" href={props.articleUrl}>
+            <span>go to article</span>
+         </a>
         </button>
-        <button className="article__btn red">
-          <a href={props.authorUrl}>about author</a>
+        <button className="article__btn">
+          <a target='_blank' rel="noopener noreferrer" href={props.authorUrl}>about author</a>
         </button>
         </div>
   )
