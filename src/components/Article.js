@@ -4,24 +4,31 @@ import PropTypes from 'prop-types'
 function Article(props) {
   return (
     <div className="article">
-        <div className="article__author">
-          <img className="article__author__img" src={props.authorAvatar} alt="author"/>
-            <p className="article__author__title">{props.title}</p>
-            <p className="article__author__data">{props.data}</p>
-        </div>
+    <a href={props.authorUrl}>
+      <div className="article__author">
+        <img className="article__author__img" src={props.authorAvatar} alt="author" />
+        <p className="article__author__title">{props.title}</p>
+        <p className="article__author__data">{props.data}</p>
+      </div>
+    </a>
+
+      <a href={props.articleUrl}>
         <div className="article__content__imgContainer" >
-          <img src={props.articleImg} alt="article"/>
-        </div>
-        <div className="article__description" dangerouslySetInnerHTML={{ __html: props.description }} />
-        <button className="article__btn">
-         <a target='_blank' rel="noopener noreferrer" href={props.articleUrl}>
-            <span>go to article</span>
-         </a>
-        </button>
-        <button className="article__btn">
-          <a target='_blank' rel="noopener noreferrer" href={props.authorUrl}>about author</a>
-        </button>
-        </div>
+        <img src={props.articleImg} alt="article" />
+      </div>
+      <div className="article__description" dangerouslySetInnerHTML={{ __html: props.description }} />
+      </a>
+
+
+      <button className="article__btn">
+        <a target='_blank' rel="noopener noreferrer" href={props.articleUrl}>
+          <span>go to article</span>
+        </a>
+      </button>
+      <button className="article__btn">
+        <a target='_blank' rel="noopener noreferrer" href={props.authorUrl}>about author</a>
+      </button>
+    </div>
   )
 }
 

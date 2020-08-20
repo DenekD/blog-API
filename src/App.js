@@ -14,7 +14,8 @@ export class App extends Component {
 
   state = {
     posts: [],
-    queryNumber: 6
+    queryNumber: 6,
+    loaded: false
   }
 
   componentDidMount() {
@@ -26,7 +27,8 @@ export class App extends Component {
       .then(response => {
         this.setState({
           posts: response.data.posts,
-          queryNumber: query + 6
+          queryNumber: query + 6,
+          loaded: true
         });
       })
       .catch(error => {
@@ -36,18 +38,21 @@ export class App extends Component {
 
   render() {
     return (
-    <div className="main-content">
-    <Header />
-    <Navbar />
-    <HashRouter>
-      <Switch>
-        <Route path="/" render={ ()=> <ArticlesList posts={this.state.posts}/>}>
-        </Route>
-      </Switch>
-    </HashRouter>
-    <button onClick={() => this.performSearch(this.state.queryNumber)} className="btn-loadMore article__btn blue">load more posts</button>
-  </div>
-   )
+      <div className="main-content">
+        <Header />
+        <Navbar />
+        {this.state.loaded ? <ArticlesList posts={this.state.posts} /> : <i class="fas fa-spinner"></i> }
+
+        <button onClick={() =>{
+           this.performSearch(this.state.queryNumber)
+           this.setState({
+             loaded: false
+           })
+        }}
+        className="btn-loadMore article__btn">load more posts</button>
+      </div>
+
+    )
   }
 }
 

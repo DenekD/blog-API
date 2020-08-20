@@ -5,20 +5,20 @@ import Article from './Article'
 
 function ArticlesList(props) {
   return (
-    <div id="wrapper">
+    <div className="list">
 
-      {props.posts.map(post =>(
-            <Article
-              authorAvatar={post.author.avatar_URL}
-              title={post.title}
-              data={post.date.substring(0,10)}
-              articleImg={post.featured_image}
-              description={post.content.substring(0,250)}
-              articleUrl={post.URL}
-              authorUrl={post.author.profile_URL}
-            />
-          )
-        )
+      {props.posts.map(post => (
+        <Article
+          authorAvatar={post.author.avatar_URL}
+          title={post.title}
+          data={post.date.substring(0, 10)}
+          articleImg={post.featured_image}
+          description={post.content.substring(0, 250)}
+          articleUrl={post.URL}
+          authorUrl={post.author.profile_URL}
+        />
+      )
+      )
       }
     </div>
   )
